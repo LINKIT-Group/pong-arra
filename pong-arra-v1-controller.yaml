@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  labels:
+    app: pong-arra
+    version: v1
+  name: pong-arra-v1
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: pong-arra
+        version: v1
+    spec:
+      containers:
+        - image: "linkitgroup/pong-arra:v1"
+          name: pong-arra
+          ports:
+            - containerPort: 8080
+              name: http
