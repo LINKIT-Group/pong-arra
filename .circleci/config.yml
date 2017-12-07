@@ -1,0 +1,33 @@
+version: 2
+jobs:
+  build:
+    context: org-global
+
+  build:
+    docker:
+      - image: docker:17.09.0-ce-git
+    environment: 
+      VERSION: 0.1
+      KUBE_PATH: ~/.kube
+      KUBECONFIG: ~/.kube/config 
+
+    steps:
+      - setup_remote_docker
+
+      - checkout
+
+
+      - run:
+          name: Install dependencies
+          command: |
+            apk add --no-cache \
+              curl openssl bash 
+      - run: docker build --build-arg version=v1 -t linkitgroup/pong-arra:${CIRCLE_BUILD_NUM} .
+      
+
+      # push Docker image
+      - run: |
+          echo $CIRCLE_BUILD_NUM
+          docker login -u $DOCKER_USER -p $DOCKER_PASS
+          docker push linkitgroup/pong-arra:${CIRCLE_BUILD_NUM}
+          bash k8s/deploy.sh $KEY pong-arra ${CIRCLE_BUILD_NUM} development 

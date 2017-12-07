@@ -1,0 +1,20 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: pong-arra
+  labels:
+    app: pong-arra
+    stable.k8s.psg.io/kcm.class: default
+spec:
+  rules:
+  - host: pong-arra.kops.k8s.live
+    http:
+      paths:
+      - backend:
+          serviceName: pong-arra
+          servicePort: 8080
+        path: /
+  tls:
+  - hosts:
+    - pong-arra.kops.k8s.live
+    secretName: pong-arra.kops.k8s.live
