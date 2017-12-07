@@ -11,7 +11,7 @@ func main() {
 		userAgent := r.Header.Get("User-Agent")
 		log.Printf("%s - [%s %s %s] 200 [%s]", r.RemoteAddr, r.Method, r.URL.Path, r.Proto, userAgent)
 		w.Header().Set("Server", "Hello/v1")
-		fmt.Fprintf(w, "Hello, World!\n")
+		fmt.Fprintf(w, "Hello, World!\nVersion: 1")
 	})
 
 	log.Println("Starting Hello service...")
