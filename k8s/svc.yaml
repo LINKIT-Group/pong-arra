@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: pong-arra
+  labels:
+    app: pong-arra
+spec:
+  selector:
+    app: pong-arra
+  ports:
+  - port: 8080
+    protocol: TCP
+    targetPort: 8080
