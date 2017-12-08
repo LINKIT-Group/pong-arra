@@ -4,7 +4,8 @@ import (
 	"fmt"
 	"log"
 	"net/http"
-	// "github.com/prometheus/client_golang/prometheus/promhttp"
+
+	"github.com/prometheus/client_golang/prometheus/promhttp"
 )
 
 func main() {
@@ -14,7 +15,7 @@ func main() {
 		w.Header().Set("Server", "Hello/v1")
 		fmt.Fprintf(w, "Hello, World!\nVersion: 1")
 	})
-	// http.Handle("/metrics", promhttp.Handler())
+	http.Handle("/metrics", promhttp.Handler())
 	log.Println("Starting Hello service...")
 	log.Fatal(http.ListenAndServe(":8080", nil))
 }
