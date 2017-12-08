@@ -1,0 +1,73 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "4QnLdmB1kG3N+KlDd1N+G9TWAGQ=",
+			"path": "github.com/beorn7/perks/quantile",
+			"revision": "3ac7bf7a47d159a033b107610db8a1b6575507a4",
+			"revisionTime": "2016-02-29T21:34:45Z"
+		},
+		{
+			"checksumSHA1": "oJGkod8y/3GTbKfazzQM+nQOPR0=",
+			"path": "github.com/golang/protobuf/proto",
+			"revision": "4bd1920723d7b7c925de087aa32e2187708897f7",
+			"revisionTime": "2016-11-09T07:27:36Z"
+		},
+		{
+			"checksumSHA1": "Q2vw4HZBbnU8BLFt8VrzStwqSJg=",
+			"path": "github.com/matttproud/golang_protobuf_extensions/pbutil",
+			"revision": "fc2b8d3a73c4867e51861bbdd5ae3c1f0869dd6a",
+			"revisionTime": "2015-04-06T17:39:34Z"
+		},
+		{
+			"checksumSHA1": "8oKQtUZLRuxPAQ9bHKqPkOda0hM=",
+			"path": "github.com/prometheus/client_golang/prometheus",
+			"revision": "e7e903064f5e9eb5da98208bae10b475d4db0f8c",
+			"revisionTime": "2017-05-31T13:00:54Z"
+		},
+		{
+			"checksumSHA1": "HRvUjnMqHXRUhA/cXnnKG9mvQ6A=",
+			"path": "github.com/prometheus/client_golang/prometheus/promhttp",
+			"revision": "e7e903064f5e9eb5da98208bae10b475d4db0f8c",
+			"revisionTime": "2017-05-31T13:00:54Z"
+		},
+		{
+			"checksumSHA1": "DvwvOlPNAgRntBzt3b3OSRMS2N4=",
+			"path": "github.com/prometheus/client_model/go",
+			"revision": "fa8ad6fec33561be4280a8f0514318c79d7f6cb6",
+			"revisionTime": "2015-02-12T10:17:44Z"
+		},
+		{
+			"checksumSHA1": "Wtpzndm/+bdwwNU5PCTfb4oUhc8=",
+			"path": "github.com/prometheus/common/expfmt",
+			"revision": "13ba4ddd0caa9c28ca7b7bffe1dfa9ed8d5ef207",
+			"revisionTime": "2017-04-27T09:54:55Z"
+		},
+		{
+			"checksumSHA1": "GWlM3d2vPYyNATtTFgftS10/A9w=",
+			"path": "github.com/prometheus/common/internal/bitbucket.org/ww/goautoneg",
+			"revision": "13ba4ddd0caa9c28ca7b7bffe1dfa9ed8d5ef207",
+			"revisionTime": "2017-04-27T09:54:55Z"
+		},
+		{
+			"checksumSHA1": "0LL9u9tfv1KPBjNEiMDP6q7lpog=",
+			"path": "github.com/prometheus/common/model",
+			"revision": "13ba4ddd0caa9c28ca7b7bffe1dfa9ed8d5ef207",
+			"revisionTime": "2017-04-27T09:54:55Z"
+		},
+		{
+			"checksumSHA1": "Yyg/3nrbmiSL8eQnPisYWINAxqw=",
+			"path": "github.com/prometheus/procfs",
+			"revision": "65c1f6f8f0fc1e2185eb9863a3bc751496404259",
+			"revisionTime": "2017-05-19T19:08:37Z"
+		},
+		{
+			"checksumSHA1": "xCiFAAwVTrjsfZT1BIJQ3DgeNCY=",
+			"path": "github.com/prometheus/procfs/xfs",
+			"revision": "65c1f6f8f0fc1e2185eb9863a3bc751496404259",
+			"revisionTime": "2017-05-19T19:08:37Z"
+		}
+	],
+	"rootPath": "github.com/LINKIT-Group/pong-arra"
+}
